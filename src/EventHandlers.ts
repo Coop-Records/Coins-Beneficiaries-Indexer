@@ -6,7 +6,6 @@ import {
   LockableUniswapV3Initializer_Lock,
   BeneficiaryData,
 } from "generated";
-import { decodeAbiParameters } from "viem";
 
 LockableUniswapV3Initializer.Lock.handler(async ({ event, context }) => {
   const lockId = `${event.chainId}_${event.block.number}_${event.logIndex}`;
