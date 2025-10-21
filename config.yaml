@@ -6,10 +6,6 @@ contracts:
     handler: src/EventHandlers.ts
     abi_file_path: abis/LockableUniswapV3Initializer.json
     events:
-      - event: Collect
-        field_selection:
-          transaction_fields:
-            - hash
       - event: Lock
         field_selection:
           transaction_fields:
